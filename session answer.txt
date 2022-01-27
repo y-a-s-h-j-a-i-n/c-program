@@ -9,6 +9,8 @@ void main()
     scanf("%f",&num1);
     a=num1*0.4;
     b=num1*0.2;
+    djhsfjhds
+    fkdkjflkdjsalk
     printf("gross salary is %f",num1+a+b);
 
 }
