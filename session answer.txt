@@ -1,0 +1,133 @@
+1 st question :
+1 st answer:
+#include <stdio.h>
+
+void main()
+{
+    float num1,a,b;
+    printf("enter a basic salary :");
+    scanf("%f",&num1);
+    a=num1*0.4;
+    b=num1*0.2;
+    printf("gross salary is %f",num1+a+b);
+
+}
+
+
+
+2nd question:
+2nd answer:
+#include <stdio.h>
+
+void main()
+{
+    float num1;
+    printf("enter kilometer :");
+    scanf("%f",&num1);
+    printf("gross salary is %f \ngross salary is %f \ngross salary is %f \ngross salary is %f \n",num1*3280.84,num1*1000,num1*39370,num1*100000);
+
+}
+
+
+3rd question:
+3rd answer:
+
+#include <stdio.h>
+void main()
+{
+    float sp,cp,quantity,profit;
+    printf("enter selling price :");
+    scanf("%f",&sp);
+    printf("enter number of quantity :");
+    scanf("%f",&quantity);
+    printf("enter profit :");
+    scanf("%f",&profit);
+    printf("cost price of per item is %f",(sp-profit)/quantity);
+
+}
+
+
+4th question:
+4th answer:
+#include <stdio.h>
+
+void main()
+{
+    int a,b,c,d,i;
+    printf("enter a number:");
+    scanf("%d",&a);
+    c=a%10; 
+    a=a/10;  
+    b=c-1;    
+    i=1;
+    d=10;
+    while(a!=0)
+    {
+        c=a%10;   
+        a=a/10;    
+        b=(c-1)*d+b;  
+        d=10*d;
+    }
+    printf("%d",b);
+}
+
+
+
+
+
+question 5:-A library charges fine for late return of books. For first 5 days, fine charged is 2Rs/day, for 6­10 days it is Rs 3/day and above 10 days 
+it is 7Rs/day. If book is not returned for 30 days, fine will be charged and membership for library is also cancelled. Accept the student­id and number
+of late days for a student, print the fine paid by
+asnwer:
+#include <stdio.h>
+int main()
+{
+    int id,day;
+    printf("Enter Student ID:");
+    scanf("%d",&id);
+    printf("enter number of late days:");
+    scanf("%d",&day);
+    if(day<=5){
+        printf("fine is %d",2*day);
+    }
+    else if(11>day && day>5){
+        printf("fine is %d",(2*5)+(3*(day-5)));
+    }
+    else if(30>day && day>10){
+        printf("fine is %d",25+(7*(day-10)));
+    }
+    else{
+        printf("%d membership for library cancelled and fine is 165",id);
+    }
+    return 0;
+}
+
+
+
+
+
+question6:
+answer6:
+#include <stdio.h>
+ int main() 
+{ 
+int m1,m2,m3,m4,x;
+ float avg; printf("Enter the marks of 4 subjects: ");
+ scanf("%d %d %d %d",&m1,&m2,&m3,&m4);
+ avg=(m1+m2+m3+m4)/4;
+ if(avg>=90) {
+ printf("Congratulations, you have secured A grade");
+ }
+ else if(avg>=75) {
+ printf("Congratulations, you have secured B grade");
+} 
+else if(avg>=60) {
+printf("Good, you have secured C grade"); 
+ } 
+else if(avg>=35) {
+printf("Good, you have secured D grade");
+ } 
+else { 
+printf("Fail");
+ }
+}
